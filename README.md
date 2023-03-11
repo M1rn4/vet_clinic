@@ -154,6 +154,7 @@ Example commands:
 ### Install
 
 Install this project with:
+git clone 
 
 <!--
 Example command:
@@ -204,21 +205,16 @@ Example:
 
 <!-- AUTHORS -->
 
+
+<!-- AUTHORS -->
+
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+👤 **MIRNA**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@M1rn4](https://github.com/M1rn4)
+- Twitter: [Mirna_Ampuero](https://twitter.com/_AmpueroMirna)
+- LinkedIn: [Mirna](https://www.linkedin.com/in/mirna-ampuero-caro/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -228,7 +224,7 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
+- [ ] **[SQL]**
 - [ ] **[new_feature_2]**
 - [ ] **[new_feature_3]**
 

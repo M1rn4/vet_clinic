@@ -24,7 +24,6 @@ REQUIRED SECTIONS:
 - Table of Contents
 - About the Project
   - Built With
-  - Live Demo
 - Getting Started
 - Authors
 - Future Features
@@ -105,16 +104,6 @@ After you're finished please remove all the comments and instructions!
 - **[key_feature_1]**
 - **[key_feature_2]**
 - **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](<replace-with-your-deployment-URL>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

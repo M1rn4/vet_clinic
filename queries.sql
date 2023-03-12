@@ -47,3 +47,49 @@ SELECT AVG(weight_kg) FROM animals;
 SELECT neutered, MAX(escape_attempts) FROM animals GROUP BY neutered;
 SELECT species, MAX(weight_kg), MIN(weight_kg) FROM animals GROUP BY species;
 SELECT species, AVG(escape_attempts) FROM animals WHERE date_of_birth BETWEEN '1990-01-01'and '2000-12-31' GROUP BY species;
+
+-- 1. ¿Qué animales pertenecen a Melody Pond?
+SELECT animals.name
+FROM animals
+JOIN owners ON animals.owner_id = owners.id
+WHERE owners.full_name = 'Melody Pond';
+
+-- 2. Lista de todos los animales que son Pokemon.
+SELECT animals.name
+FROM animals
+JOIN species ON animals.species_id = species.id
+WHERE species.name = 'Pokemon';
+
+-- 3. Lista de todos los propietarios y sus animales, incluyendo aquellos que no tienen animales.
+SELECT owners.full_name, animals.name
+FROM owners
+LEFT JOIN animals ON owners.id = animals.owner_id;
+
+-- 4. ¿Cuántos animales hay por especie?
+SELECT species.name, COUNT(animals.id) AS num_animals
+FROM species
+LEFT JOIN animals ON species.id = animals.species_id
+GROUP BY species.name;
+
+-- 5. Lista de todos los Digimon propiedad de Jennifer Orwell.
+SELECT animals.name
+FROM animals
+JOIN species ON animals.species_id = species.id
+JOIN owners ON animals.owner_id = owners.id
+WHERE species.name = 'Digimon' AND owners.full_name = 'Jennifer Orwell';
+
+-- 6. Lista de todos los animales propiedad de Dean Winchester que no han intentado escapar.
+SELECT animals.name
+FROM animals
+JOIN owners ON animals.owner_id = owners.id
+LEFT JOIN escapes ON animals.id = escapes.animal_id
+WHERE owners.full_name = 'Dean Winchester' AND escapes.animal_id IS NULL;
+
+-- 7. ¿Quién tiene la mayoría de los animales?
+SELECT owners.full_name, COUNT(animals.id) AS num_animals
+FROM owners
+LEFT JOIN animals ON owners.id = animals.owner_id
+GROUP BY owners.full_name
+ORDER BY num_animals DESC
+LIMIT 1;
+
